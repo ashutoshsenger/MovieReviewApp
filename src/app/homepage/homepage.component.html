@@ -1,0 +1,36 @@
+<div class="container homepage-wrapper">
+    <div class="row">
+        <h3 class="heading">Search Movies</h3>
+    </div>
+    <div class="input-box row">
+        <input type="text" class="input-search" [(ngModel)]="movieQuery" name="search" (keydown)="getMovieData(movieQuery)" placeholder="Enter Keyword for movies">
+    </div>
+    <div class="results-box row">
+        <div class="result" *ngFor="let movie of moviesData">
+         <div class="col-md-12 movie-card">
+          <div class="row">
+              <div class="col-md-2 image-div">
+                  <img src="https://image.tmdb.org/t/p/w220_and_h330_face/{{movie.backdrop_path}}" *ngIf="movie.backdrop_path" alt="pic" class="movie-image">
+                  <img src="assets/images/movie.png" *ngIf="!movie.backdrop_path" alt="pic" class="movie-image">
+              </div>
+              <div class="col-md-5 details-div">
+                  <div class="row detail">
+                    <span class="label">Title :</span>{{movie.title}}
+                  </div>
+                  <div class="row detail">
+                    <span class="label">Rating :</span>{{movie.popularity}}
+                </div>
+                <div class="row detail">
+                    <span class="label">Released on :</span>{{movie.release_date}}
+                </div>
+              </div>
+              <div class="col-md-5" align="right">
+                  <button class="bookmark" (click)="bookmarkMovie(movie)">
+                    Bookmark <i class="fa fa-bookmark-o book-icon"></i>
+                  </button>
+              </div>
+          </div>
+         </div>
+        </div>
+    </div>
+</div>

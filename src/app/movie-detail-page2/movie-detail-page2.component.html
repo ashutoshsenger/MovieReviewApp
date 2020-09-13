@@ -1,0 +1,44 @@
+<div class="container homepage-wrapper">
+    <div class="row">
+        <h3 class="heading">Bookmarked Movies More Details</h3>
+    </div>
+    <div class="results-box row">
+        <div class="result" *ngFor="let movie of moviesData">
+         <div class="col-md-12 movie-card">
+          <div class="row">
+              <div class="col-md-2 image-div">
+                  <img src="https://image.tmdb.org/t/p/w220_and_h330_face/{{movie.backdrop_path}}" *ngIf="movie.backdrop_path" alt="pic" class="movie-image">
+                  <img src="assets/images/movie.png" *ngIf="!movie.backdrop_path" alt="pic" class="movie-image">
+              </div>
+              <div class="col-md-9 details-div">
+                  <div class="row detail">
+                    <span class="label">Title :</span>{{movie.title}}
+                  </div>
+                  <div class="row detail">
+                    <span class="label">Original Title :</span>{{movie.original_title}}
+                  </div>
+                  <div class="row detail">
+                    <span class="label">Rating :</span>{{movie.popularity}}
+                </div>
+                <div class="row detail">
+                    <span class="label">Votes :</span>{{movie.vote_count}}
+                </div>
+                <div class="row detail">
+                    <span class="label">Released on :</span>{{movie.release_date}}
+                </div>
+                <div class="row detail">
+                    <span class="label">Original_language :</span>{{movie.original_language}}
+                </div>
+                <div class="row detail">
+                    <span class="label">Adult :</span>{{movie.adult}}
+                </div>
+                <div class="row detail">
+                    <span class="label">Overview :</span>{{movie.overview}}
+                </div>
+
+              </div>
+          </div>
+         </div>
+        </div>
+    </div>
+</div>

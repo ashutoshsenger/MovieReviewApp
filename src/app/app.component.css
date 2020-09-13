@@ -1,0 +1,27 @@
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.logo {
+  height: auto;
+  width: 170px;
+}
+
+.nav-div {
+  margin-left: 200px;    
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.ham-span {
+  font-size: 15px;
+  color: white;
+}
+
+.ham-icon {
+  color:#fff;
+  font-size:28px;   
+}

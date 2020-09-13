@@ -1,0 +1,20 @@
+<div class="login-container">
+    <div class="login-content">
+     <div class="card">
+        <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
+          <mat-form-field>
+            <mat-icon matPrefix>person_outline</mat-icon>
+            <input matInput type="text" formControlName="username">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-icon matPrefix>lock_outline</mat-icon>
+            <input matInput type="password" autocomplete="false" formControlName="password">
+          </mat-form-field>
+
+          <button type="submit" mat-raised-button color="primary">Login</button>
+        </form>
+        <span class="error" *ngIf="isError">{{errorMsg}}</span>
+    </div>
+    </div>
+  </div>
