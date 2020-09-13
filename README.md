@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
 
+# Project Details
+
+1. This Web App has been developed by using Angular 8
+2. For the data stuff, "https://www.themoviedb.org/documentation/api", using it's API
+3. A user can login via below credentials
+      username : 'ashutosh@gmail.com'
+      password : '123456ashu'
+4. After login user will be redirected to homepage where a user can search movies by typing keyword in the search box
+5. User can also bookmark his/her favourite movie too.
+6. In the MovieDetails One page user can see the list of bookmark movies
+7. In the MovieDetais Two page user can see the all available UI data for a movie in the localStorage.
+8. Upcoming Section is not developed for now , as upcoming movies api is not available currently.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
