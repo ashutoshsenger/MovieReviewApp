@@ -16,6 +16,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 8. Upcoming Section is not developed for now , as upcoming movies api is not available currently.
 
 
+# HOW TO RUN
+1. First clone this repository by using this command " git clone https://github.com/ashutoshsenger/MovieReviewApp.git "
+2. Then run npm install command which will install the Node Modules required to run your project.
+3. After the installation , run ng serve command to run the server and once the server is running live go to your browser and hit this url "http://localhost:4200"
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
